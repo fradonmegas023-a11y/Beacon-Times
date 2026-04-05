@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Beacon Times</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        <img src="logo.png" alt="Logo">
+        <span>Beacon Times</span>
+    </div>
+    <div class="hamburger" onclick="toggleNav()">&#8942;</div>
+    <nav id="nav-links">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#preachers">Team</a>
+        <a href="#news">News</a>
+        <a href="#resources">Resources</a>
+        <a href="#testimonies">Testimonies</a>
+        <a href="#contact">Contact</a>
+        <a href="#support" class="donate-btn">Support Us</a>
+    </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+    <video autoplay muted loop playsinline class="bg-video">
+        <source src="beacon-video.mp4" type="video/mp4">
+    </video>
+    <div class="overlay"></div>
+    <div class="hero-content">
+        <h1>Lighting the World with Truth</h1>
+        <p>Faith • News • Youth • Purpose</p>
+        <button onclick="scrollToProjects()">See Our Projects</button>
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section">
+    <h2>About Beacon Times</h2>
+    <p>Beacon Times is a faith-driven digital platform focused on youth empowerment, moral clarity, and biblical truth. We report, teach, and inspire.</p>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="section">
+<h2>Our Projects</h2>
+<p>Beacon Times initiatives to empower youth, spread the Word, and serve communities.</p>
+<div class="projects-list">
+    <div class="project-card">
+        <h3>Street Worship</h3>
+        <p>Taking worship to the streets! Live music, prayer, and hope messages.</p>
+        <a href="https://wa.me/255761337696?text=Join%20Street%20Worship" target="_blank" class="donate-btn">Join This Project</a>
+    </div>
+    <div class="project-card">
+        <h3>Outreach Mission</h3>
+        <p>Visiting communities in need, offering support, teachings, and spiritual guidance.</p>
+        <a href="https://wa.me/255761337696?text=Join%20Outreach%20Mission" target="_blank" class="donate-btn">Join This Project</a>
+    </div>
+    <div class="project-card">
+        <h3>On-Campus Ministry</h3>
+        <p>Campus initiatives: mentorship, Bible studies, leadership, social awareness campaigns.</p>
+        <a href="https://wa.me/255761337696?text=Join%20On-Campus%20Ministry" target="_blank" class="donate-btn">Join This Project</a>
+    </div>
+</div>
+</section>
+
+<!-- TEAM -->
+<section id="preachers" class="section">
+<h2>Meet Our Team</h2>
+<div class="preachers">
+    <div class="preacher-card">
+        <img src="images/Ms. Lian.jpg" alt="Ms. Lian">
+        <h4>Ms. Lian</h4>
+        <p class="bio">Prayer warrior focusing on healing, victory, and awakening.</p>
+    </div>
+    <div class="preacher-card">
+        <img src="images/Sir. Fradon.jpg" alt="Sir. Fradon">
+        <h4>Sir. Fradon</h4>
+        <p class="bio">Media technician and youth empowerment advocate.</p>
+    </div>
+    <div class="preacher-card">
+        <img src="images/Sis. Vee.jpg" alt="Sis. Vee">
+        <h4>Sis. Vee</h4>
+        <p class="bio">Mentor & counselor guiding youth and women to purpose.</p>
+    </div>
+    <div class="preacher-card">
+        <img src="images/Bro. Kenna.jpg" alt="Bro. Kenna">
+        <h4>Bro. Kenna</h4>
+        <p class="bio">Musician & worship leader inspiring faith through music.</p>
+    </div>
+</div>
+</section>
+
+<!-- NEWS -->
+<section id="news" class="section dark">
+<h2>Latest News</h2>
+<div class="resource-list">
+    <a onclick="toggleContent('news1')">1. AI & Moral Responsibility in 2026</a>
+    <div id="news1" class="hidden-content">
+        <img src="images/ai-news.png" class="preview-img">
+        <p>Faith leaders discuss ethical boundaries and responsibility in AI.</p>
+    </div>
+
+    <a onclick="toggleContent('news2')">2. Youth Identity Crisis in Digital Era</a>
+    <div id="news2" class="hidden-content">
+        <img src="images/youth-news.jpg" class="preview-img">
+        <p>Rising anxiety and identity confusion among youth driven by social media.</p>
+    </div>
+
+    <a onclick="toggleContent('news3')">3. Faith Movements Growing Among Gen Z</a>
+    <div id="news3" class="hidden-content">
+        <img src="images/faith-news.jpeg" class="preview-img">
+        <p>Increasing spiritual curiosity among young adults worldwide.</p>
+    </div>
+</div>
+</section>
+
+<!-- RESOURCES -->
+<section id="resources" class="section">
+<h2>Resources</h2>
+
+<h3>Free Bible Studies (PPTX)</h3>
+<div class="resource-list">
+    <a href="pptx/brainwashing_presentation_improved.pptx" target="_blank">1. Brainwashing</a>
+    <a href="pptx/666_revelation_presentation.pptx" target="_blank">2. Is 666 Connected to modern technology?</a>
+    <a href="pptx/mark_of_the_beast_prophecy_design.pptx" target="_blank">3. Preparing for the mark of the Beast</a>
+</div>
+
+<h3 style="margin-top:50px;">Video Teachings</h3>
+<div class="resource-list">
+    <a onclick="toggleContent('vid1')">1. The Gospel Explained</a>
+    <div id="vid1" class="hidden-content">
+        <iframe src="video-teachings/are-they-a-burden.mp4" allowfullscreen></iframe>
+        <p>Are they a burden?</p>
+    </div>
+
+    <a onclick="toggleContent('vid2')">2. Grace & Truth</a>
+    <div id="vid2" class="hidden-content">
+        <iframe src="video-teachings/freedom-of-choice.mp4" allowfullscreen></iframe>
+        <p>Freedom of choice: Honor GOD with your body</p>
+    </div>
+
+    <a onclick="toggleContent('vid3')">3. Faith in Modern Culture</a>
+    <div id="vid3" class="hidden-content">
+        <iframe src="video-teachings/you-are-in-christ.mp4" allowfullscreen></iframe>
+        <p>You are in Christ: He's in Control</p>
+    </div>
+</div>
+
+<h3 style="margin-top:50px;">Books (Online Links)</h3>
+<div class="resource-list">
+    <a href="https://m.egwwritings.org/en/book/108/toc" target="_blank">Steps to Christ</a>
+    <a href="https://m.egwwritings.org/en/book/132/toc" target="_blank">The Desire of Ages</a>
+    <a href="https://m.egwwritings.org/en/book/84/toc" target="_blank">The Great Controversy</a>
+    <a href="https://m.egwwritings.org/en/book/130/toc" target="_blank">Patriarchs and Prophets</a>
+    <a href="https://m.egwwritings.org/en/book/88/toc" target="_blank">Christ's Object Lessons</a>
+</div>
+</section>
+
+<!-- TESTIMONIES -->
+<section id="testimonies" class="section">
+<h2>Testimonies</h2>
+<p>Share your story via WhatsApp and inspire others:</p>
+<a href="https://wa.me/255761337696" target="_blank" class="donate-btn">Send Your Testimony</a>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section dark">
+<h2>Contact</h2>
+<p>Email: info@beacontimes.org</p>
+<p>WhatsApp: <a href="https://wa.me/255761337696" target="_blank">+255 761 337 696</a></p>
+<p>Location: Arusha, Tanzania</p>
+</section>
+
+<!-- SUPPORT -->
+<section id="support" class="section">
+<h2>Support Us</h2>
+
+<div class="support-card">
+<h3>Sponsor a Project</h3>
+<p>Choose a project to fund:</p>
+<ul>
+<li>Sponsor 1 Bible Study PDF printing</li>
+<li>Sponsor Youth Media Training</li>
+<li>Sponsor One Video Production</li>
+</ul>
+<p>Contact us via <a href="https://wa.me/255761337696" target="_blank">WhatsApp</a> to support a project.</p>
+</div>
+
+<div class="support-card">
+<h3>Volunteer</h3>
+<p>Your skills can make a difference! Join our team:</p>
+<ul>
+<li>Graphic designers</li>
+<li>Writers</li>
+<li>Video editors</li>
+<li>Social media promoters</li>
+</ul>
+<p>Reach out via <a href="https://wa.me/255761337696" target="_blank">WhatsApp</a> to volunteer.</p>
+</div>
+
+<div class="support-card">
+<h3>Share the Mission</h3>
+<p>Help us reach more people:</p>
+<div class="share-buttons">
+<a href="https://wa.me/?text=Check%20out%20Beacon%20Times%20https://fradonmegas023-a11y.github.io/Beacon-Times/" target="_blank" class="share-btn whatsapp">WhatsApp</a>
+<a href="https://www.facebook.com/sharer/sharer.php?u=https://fradonmegas023-a11y.github.io/Beacon-Times/" target="_blank" class="share-btn facebook">Facebook</a>
+<button class="share-btn copy" onclick="copyLink()">Copy Link</button>
+</div>
+</div>
+</section>
+
+<footer>
+<p>© 2026 Beacon Times. All rights reserved.</p>
+</footer>
+
+<script>
+function copyLink() {
+    navigator.clipboard.writeText('https://fradonmegas023-a11y.github.io/Beacon-Times/');
+    alert('Link copied to clipboard!');
+}
+
+function scrollToProjects() {
+    document.getElementById("projects").scrollIntoView({behavior:"smooth"});
+}
+
+function toggleContent(id) {
+    var content = document.getElementById(id);
+    content.style.display = (content.style.display === "block") ? "none" : "block";
+}
+
+function toggleNav() {
+    document.getElementById("nav-links").classList.toggle("active");
+}
+</script>
+
+</body>
+</html>
